@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="vf:domain" content="ads.viafoura.com" />
+    <meta name="vf:container_id" content="101113541" />
+    <title>Aniview Testing Page</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .container {
+        width: 40rem;
+        margin: auto;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>ANIVIEW ADS VIAFOURA CUSTOM INTEGRATION</h1>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, amet
+          eos! Magnam, blanditiis nesciunt? Necessitatibus velit nemo, quidem
+          ex, ut nostrum placeat ducimus nesciunt distinctio deserunt enim,
+          rerum reiciendis commodi. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Incidunt sapiente ad nemo unde. Facilis voluptas
+          inventore aperiam repellendus aspernatur officia corporis? Eum quae
+          vel reiciendis debitis maiores ex quos fugit? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Atque nobis odit labore ex. Hic
+          animi impedit iure voluptatibus soluta. Neque voluptatibus deserunt
+          nam vero laborum alias consequatur minus saepe explicabo. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Maiores, corrupti!
+          Perspiciatis earum mollitia a ut error atque corporis quia voluptas
+          repellat rerum tenetur quas, accusantium amet veritatis dolor
+          praesentium dolore?
+        </p>
+        <div class="viafoura">
+          <vf-conversation-starter
+            target="viafoura-conversations"
+          ></vf-conversation-starter>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo
+          nesciunt laudantium, consectetur aperiam, itaque ut facere perferendis
+          repudiandae sed voluptatem assumenda eum necessitatibus, dignissimos
+          enim corrupti in. Quae, doloremque! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Unde enim omnis aliquid veniam accusamus
+          maxime quo quae sapiente nam. Amet atque illum quidem earum alias quas
+          sed hic accusamus officia.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, amet
+          eos! Magnam, blanditiis nesciunt? Necessitatibus velit nemo, quidem
+          ex, ut nostrum placeat ducimus nesciunt distinctio deserunt enim,
+          rerum reiciendis commodi. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Incidunt sapiente ad nemo unde. Facilis voluptas
+          inventore aperiam repellendus aspernatur officia corporis? Eum quae
+          vel reiciendis debitis maiores ex quos fugit? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Atque nobis odit labore ex. Hic
+          animi impedit iure voluptatibus soluta. Neque voluptatibus deserunt
+          nam vero laborum alias consequatur minus saepe explicabo. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Maiores, corrupti!
+          Perspiciatis earum mollitia a ut error atque corporis quia voluptas
+          repellat rerum tenetur quas, accusantium amet veritatis dolor
+          praesentium dolore?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo
+          nesciunt laudantium, consectetur aperiam, itaque ut facere perferendis
+          repudiandae sed voluptatem assumenda eum necessitatibus, dignissimos
+          enim corrupti in. Quae, doloremque! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Unde enim omnis aliquid veniam accusamus
+          maxime quo quae sapiente nam. Amet atque illum quidem earum alias quas
+          sed hic accusamus officia.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, amet
+          eos! Magnam, blanditiis nesciunt? Necessitatibus velit nemo, quidem
+          ex, ut nostrum placeat ducimus nesciunt distinctio deserunt enim,
+          rerum reiciendis commodi. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Incidunt sapiente ad nemo unde. Facilis voluptas
+          inventore aperiam repellendus aspernatur officia corporis? Eum quae
+          vel reiciendis debitis maiores ex quos fugit? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Atque nobis odit labore ex. Hic
+          animi impedit iure voluptatibus soluta. Neque voluptatibus deserunt
+          nam vero laborum alias consequatur minus saepe explicabo. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Maiores, corrupti!
+          Perspiciatis earum mollitia a ut error atque corporis quia voluptas
+          repellat rerum tenetur quas, accusantium amet veritatis dolor
+          praesentium dolore?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo
+          nesciunt laudantium, consectetur aperiam, itaque ut facere perferendis
+          repudiandae sed voluptatem assumenda eum necessitatibus, dignissimos
+          enim corrupti in. Quae, doloremque! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Unde enim omnis aliquid veniam accusamus
+          maxime quo quae sapiente nam. Amet atque illum quidem earum alias quas
+          sed hic accusamus officia.
+        </p>
+      </div>
+      <div class="viafoura">
+        <vf-tray-trigger floating="true"></vf-tray-trigger>
+      </div>
+      <div id="viafoura-conversations">
+        <div class="viafoura">
+          <vf-conversations></vf-conversations>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdn.viafoura.net/entry/index.js"
+    ></script>
+    <script type="text/javascript" async>
+      /**
+       * Dynamically generates an ad and inserts it into the template when the Viafoura Conversations widget requests an ad.
+       * @param  {String} slotId - id of the element to render the ad in
+       */
+      function generateCommentAd(slotId) {
+        // Dynamically generate aniview script
+        const aniview = document.createElement("script");
+        aniview.setAttribute("async", true);
+        aniview.setAttribute("id", "AV641ca7ec5eee4b4e2204c416");
+        aniview.setAttribute(
+          "src",
+          "https://tg1.aniview.com/api/adserver/spt?AV_TAGID=641ca7ec5eee4b4e2204c416&AV_PUBLISHERID=63fbb0605bf387aca40a04c5"
+        );
+        // Append aniview script within viafoura conversations ad slot
+        document.getElementById(slotId).appendChild(aniview);
+      }
+
+      /**
+       * Dynamically generates an ad and inserts it into the template when the Viafoura LiveBlog widget requests an ad.
+       * @param  {String} slotId - id of the element to render the ad in
+       */
+      function generateLiveblogAd(slotId) {
+        // document.getElementById(slotId).appendChild(aniview);
+      }
+
+      /**
+       * Dynamically generates an ad and inserts it into the template when the Viafoura trending conversations widget requests an ad.
+       * @param  {String} slotId - id of the element to render the ad in
+       */
+      function generateContentRecirculationAd(slotId) {
+        // the ad size is limited to 300x250
+        // document.getElementById(slotId).appendChild(aniview);
+      }
+
+      /**
+       * Dynamically generates an ad and inserts it into the template when the Viafoura trending conversations widget requests an ad.
+       * @param  {String} slotId - id of the element to render the ad in
+       */
+      function requestStandaloneAd(slotId) {
+        // the ad size is limited to 300x250
+        // document.getElementById(slotId).appendChild(aniview);
+      }
+
+      /**
+       * Dynamically generates an ad and inserts it into the template when the Viafoura trending conversations widget requests an ad.
+       * @param  {String} slotId - id of the element to render the ad in
+       */
+      function requestConversationStarter(slotId) {
+        // the ad size is limited to 300x250
+        // document.getElementById(slotId).appendChild(aniview);
+      }
+
+      // Subscribe to the viafoura event when the viafoura object is ready
+      window.vfQ = window.vfQ || [];
+      window.vfQ.push(function () {
+        // Provide the desired ad generation functions as callbacks to the appropriate events:
+        window.vf.$subscribe("vf-ads", "requestCommentAd", generateCommentAd);
+        // window.vf.$subscribe('vf-ads', 'requestLiveblogAd', generateLiveblogAd);
+        // window.vf.$subscribe('vf-ads', 'requestContentRecirculationAd', generateContentRecirculationAd);
+        // window.vf.$subscribe('vf-ads', 'requestStandaloneAd', requestStandaloneAd);
+        // window.vf.$subscribe('vf-ads', 'requestConversationStarter', requestConversationStarter);
+      });
+    </script>
+  </body>
+</html>
