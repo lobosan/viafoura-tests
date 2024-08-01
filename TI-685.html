@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="vf:domain"
+      content="https://lescoopsdelinformation-latribune-sandbox.web.arc-cdn.net/"
+    />
+    <title>LesCoops del Information</title>
+    <style>
+      .container {
+        width: 520px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="viafoura">
+        <vf-trending-articles
+          title="Trending Article"
+          limit="1"
+          days-published="7"
+          trend-window="1"
+          sort="comments"
+          view="condensed"
+        ></vf-trending-articles>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdn.viafoura.net/entry/index.js"
+    ></script>
+  </body>
+</html>
