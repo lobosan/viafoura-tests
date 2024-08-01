@@ -18,11 +18,23 @@
 
   <body>
     <div class="container">
+      <h1>Days Published: 2</h1>
       <div class="viafoura">
         <vf-trending-articles
           title="Trending Article"
           limit="5"
           days-published="2"
+          trend-window="1"
+          sort="comments"
+          view="condensed"
+        ></vf-trending-articles>
+      </div>
+      <h1>Days Published: 1</h1>
+      <div class="viafoura">
+        <vf-trending-articles
+          title="Trending Article"
+          limit="5"
+          days-published="1"
           trend-window="1"
           sort="comments"
           view="condensed"
